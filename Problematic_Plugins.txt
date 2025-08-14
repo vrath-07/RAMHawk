@@ -1,0 +1,3 @@
+python vol.py -f ..\samples\memdump.mem windows.netscan > ..\analysis\windows_netscan.txt
+python vol.py -f ..\samples\memdump.mem windows.callbacks.Callbacks > ..\analysis\windows_callbacks.txt
+

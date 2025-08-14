@@ -1,0 +1,4 @@
+Volatility 3 Framework 2.26.2
+
+Hive Offset	Hive Name	Path	Last Write Time	Type	Name	ID	Count	Focus Count	Time Focused	Last Updated	Raw Data
+

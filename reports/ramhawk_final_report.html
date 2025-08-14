@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>RAMHawk Forensic Report</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f5f7fa;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background: #1e3d59;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    header h1 {
+        margin: 0;
+        font-size: 28px;
+    }
+    header p {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+    .case-info {
+        background: #fff;
+        margin: 20px auto;
+        padding: 15px;
+        max-width: 900px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        font-size: 14px;
+    }
+    .section {
+        background: #fff;
+        margin: 20px auto;
+        padding: 15px;
+        max-width: 900px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .section h2 {
+        border-bottom: 2px solid #1e3d59;
+        padding-bottom: 5px;
+        color: #1e3d59;
+    }
+    .table-container {
+        overflow-x: auto;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 13px;
+    }
+    th, td {
+        border: 1px solid #ccc;
+        padding: 6px 8px;
+        text-align: left;
+    }
+    th {
+        background: #e6eef5;
+    }
+    footer {
+        background: #1e3d59;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-top: 30px;
+        font-size: 12px;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>RAMHawk Forensic Analysis Report</h1>
+    <p>Comprehensive Memory Analysis Results</p>
+</header>
+
+<div class="case-info">
+    <strong>Case ID:</strong> RAMHawk-2025-001<br>
+    <strong>Analyst:</strong>Vansh Pradeep Singh Rathore<br>
+    <strong>Tool Version:</strong> RAMHawk v1.0<br>
+    <strong>Date:</strong> 2025-08-14 11:46:55
+</div>
+
+
+<div class="section">
+    <h2>Process List (pslist)</h2>
+    <div class="table-container">
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Network Connections (netscan)</h2>
+    <div class="table-container">
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Protocol</th>
+      <th>Local Address</th>
+      <th>Foreign Address</th>
+      <th>State</th>
+      <th>PID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TCPv4</td>
+      <td>192.168.10.146</td>
+      <td>54279</td>
+      <td>151.101.116.106</td>
+      <td>ESTABLISHED</td>
+    </tr>
+    <tr>
+      <td>UDPv4</td>
+      <td>0.0.0.0</td>
+      <td>5355</td>
+      <td>*</td>
+      <td>1160</td>
+    </tr>
+    <tr>
+      <td>UDPv6</td>
+      <td>::</td>
+      <td>5355</td>
+      <td>*</td>
+      <td>1160</td>
+    </tr>
+    <tr>
+      <td>TCPv4</td>
+      <td>0.0.0.0</td>
+      <td>49156</td>
+      <td>0.0.0.0</td>
+      <td>LISTENING</td>
+    </tr>
+    <tr>
+      <td>TCPv4</td>
+      <td>0.0.0.0</td>
+      <td>49156</td>
+      <td>0.0.0.0</td>
+      <td>LISTENING</td>
+    </tr>
+    <tr>
+      <td>TCPv6</td>
+      <td>::</td>
+      <td>49156</td>
+      <td>::</td>
+      <td>LISTENING</td>
+    </tr>
+    <tr>
+      <td>UDPv4</td>
+      <td>0.0.0.0</td>
+      <td>0</td>
+      <td>*</td>
+      <td>2032</td>
+    </tr>
+    <tr>
+      <td>UDPv6</td>
+      <td>::</td>
+      <td>0</td>
+      <td>*</td>
+      <td>2032</td>
+    </tr>
+    <tr>
+      <td>UDPv4</td>
+      <td>0.0.0.0</td>
+      <td>0</td>
+      <td>*</td>
+      <td>2032</td>
+    </tr>
+    <tr>
+      <td>TCPv4</td>
+      <td>0.0.0.0</td>
+      <td>3389</td>
+      <td>0.0.0.0</td>
+      <td>LISTENING</td>
+    </tr>
+    <tr>
+      <td>TCPv6</td>
+      <td>::</td>
+      <td>3389</td>
+      <td>::</td>
+      <td>LISTENING</td>
+    </tr>
+    <tr>
+      <td>TCPv4</td>
+      <td>192.168.10.146</td>
+      <td>139</td>
+      <td>0.0.0.0</td>
+      <td>LISTENING</td>
+    </tr>
+    <tr>
+      <td>TCPv4</td>
+      <td>0.0.0.0</td>
+      <td>3389</td>
+      <td>0.0.0.0</td>
+      <td>LISTENING</td>
+    </tr>
+    <tr>
+      <td>TCPv4</td>
+      <td>192.168.10.146</td>
+      <td>49174</td>
+      <td>172.253.122.188</td>
+      <td>FIN_WAIT2</td>
+    </tr>
+    <tr>
+      <td>UDPv4</td>
+      <td>0.0.0.0</td>
+      <td>0</td>
+      <td>*</td>
+      <td>1160</td>
+    </tr>
+    <tr>
+      <td>UDPv6</td>
+      <td>::</td>
+      <td>0</td>
+      <td>*</td>
+      <td>1160</td>
+    </tr>
+    <tr>
+      <td>TCPv4</td>
+      <td>0.0.0.0</td>
+      <td>49154</td>
+      <td>0.0.0.0</td>
+      <td>LISTENING</td>
+    </tr>
+    <tr>
+      <td>TCPv6</td>
+      <td>::</td>
+      <td>49154</td>
+      <td>::</td>
+      <td>LISTENING</td>
+    </tr>
+    <tr>
+      <td>UDPv4</td>
+      <td>0.0.0.0</td>
+      <td>500</td>
+      <td>*</td>
+      <td>112</td>
+    </tr>
+    <tr>
+      <td>UDPv6</td>
+      <td>::</td>
+      <td>500</td>
+      <td>*</td>
+      <td>112</td>
+    </tr>
+    <tr>
+      <td>UDPv4</td>
+      <td>0.0.0.0</td>
+      <td>4500</td>
+      <td>*</td>
+      <td>112</td>
+    </tr>
+    <tr>
+      <td>UDPv4</td>
+      <td>0.0.0.0</td>
+      <td>4500</td>
+      <td>*</td>
+      <td>112</td>
+    </tr>
+    <tr>
+      <td>UDPv6</td>
+      <td>::</td>
+      <td>4500</td>
+      <td>*</td>
+      <td>112</td>
+    </tr>
+    <tr>
+      <td>UDPv4</td>
+      <td>0.0.0.0</td>
+      <td>0</td>
+      <td>*</td>
+      <td>112</td>
+    </tr>
+    <tr>
+      <td>UDPv6</td>
+      <td>::</td>
+      <td>0</td>
+      <td>*</td>
+      <td>112</td>
+    </tr>
+    <tr>
+      <td>UDPv4</td>
+      <td>0.0.0.0</td>
+      <td>0</td>
+      <td>*</td>
+      <td>112</td>
+    </tr>
+    <tr>
+      <td>UDPv6</td>
+      <td>fe80::71df:b787:f7f1:88ae</td>
+      <td>1900</td>
+      <td>*</td>
+      <td>2944</td>
+    </tr>
+    <tr>
+      <td>TCPv4</td>
+      <td>0.0.0.0</td>
+      <td>49154</td>
+      <td>0.0.0.0</td>
+      <td>LISTENING</td>
+    </tr>
+    <tr>
+      <td>TCPv4</td>
+      <td>0.0.0.0</td>
+      <td>135</td>
+      <td>0.0.0.0</td>
+      <td>LISTENING</td>
+    </tr>
+    <tr>
+      <td>TCPv4</td>
+      <td>0.0.0.0</td>
+      <td>135</td>
+      <td>0.0.0.0</td>
+      <td>LISTENING</td>
+    </tr>
+    <tr>
+      <td>TCPv6</td>
+      <td>::</td>
+      <td>135</td>
+      <td>::</td>
+      <td>LISTENING</td>
+    </tr>
+    <tr>
+      <td>TCPv4</td>
+      <td>0.0.0.0</td>
+      <td>49152</td>
+      <td>0.0.0.0</td>
+      <td>LISTENING</td>
+    </tr>
+    <tr>
+      <td>TCPv4</td>
+      <td>0.0.0.0</td>
+      <td>49158</td>
+      <td>0.0.0.0</td>
+      <td>LISTENING</td>
+    </tr>
+    <tr>
+      <td>TCPv4</td>
+      <td>0.0.0.0</td>
+      <td>49153</td>
+      <td>0.0.0.0</td>
+      <td>LISTENING</td>
+    </tr>
+    <tr>
+      <td>TCPv4</td>
+      <td>0.0.0.0</td>
+      <td>49153</td>
+      <td>0.0.0.0</td>
+      <td>LISTENING</td>
+    </tr>
+    <tr>
+      <td>TCPv6</td>
+      <td>::</td>
+      <td>49153</td>
+      <td>::</td>
+      <td>LISTENING</td>
+    </tr>
+    <tr>
+      <td>TCPv4</td>
+      <td>0.0.0.0</td>
+      <td>49158</td>
+      <td>0.0.0.0</td>
+      <td>LISTENING</td>
+    </tr>
+    <tr>
+      <td>TCPv6</td>
+      <td>::</td>
+      <td>49158</td>
+      <td>::</td>
+      <td>LISTENING</td>
+    </tr>
+    <tr>
+      <td>UDPv4</td>
+      <td>192.168.10.146</td>
+      <td>137</td>
+      <td>*</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>UDPv4</td>
+      <td>127.0.0.1</td>
+      <td>1900</td>
+      <td>*</td>
+      <td>2944</td>
+    </tr>
+    <tr>
+      <td>UDPv4</td>
+      <td>192.168.10.146</td>
+      <td>57481</td>
+      <td>*</td>
+      <td>2944</td>
+    </tr>
+    <tr>
+      <td>UDPv4</td>
+      <td>0.0.0.0</td>
+      <td>5355</td>
+      <td>*</td>
+      <td>1160</td>
+    </tr>
+    <tr>
+      <td>UDPv6</td>
+      <td>fe80::71df:b787:f7f1:88ae</td>
+      <td>57479</td>
+      <td>*</td>
+      <td>2944</td>
+    </tr>
+    <tr>
+      <td>UDPv6</td>
+      <td>fe80::71df:b787:f7f1:88ae</td>
+      <td>546</td>
+      <td>*</td>
+      <td>860</td>
+    </tr>
+    <tr>
+      <td>UDPv4</td>
+      <td>0.0.0.0</td>
+      <td>5353</td>
+      <td>*</td>
+      <td>3384</td>
+    </tr>
+    <tr>
+      <td>UDPv4</td>
+      <td>127.0.0.1</td>
+      <td>57482</td>
+      <td>*</td>
+      <td>2944</td>
+    </tr>
+    <tr>
+      <td>TCPv4</td>
+      <td>0.0.0.0</td>
+      <td>49155</td>
+      <td>0.0.0.0</td>
+      <td>LISTENING</td>
+    </tr>
+    <tr>
+      <td>TCPv6</td>
+      <td>::</td>
+      <td>49155</td>
+      <td>::</td>
+      <td>LISTENING</td>
+    </tr>
+    <tr>
+      <td>TCPv4</td>
+      <td>0.0.0.0</td>
+      <td>49155</td>
+      <td>0.0.0.0</td>
+      <td>LISTENING</td>
+    </tr>
+    <tr>
+      <td>TCPv4</td>
+      <td>192.168.10.146</td>
+      <td>54282</td>
+      <td>172.253.63.188</td>
+      <td>ESTABLISHED</td>
+    </tr>
+    <tr>
+      <td>UDPv4</td>
+      <td>0.0.0.0</td>
+      <td>49725</td>
+      <td>*</td>
+      <td>3604</td>
+    </tr>
+    <tr>
+      <td>TCPv4</td>
+      <td>192.168.10.146</td>
+      <td>54281</td>
+      <td>13.35.82.31</td>
+      <td>ESTABLISHED</td>
+    </tr>
+    <tr>
+      <td>TCPv4</td>
+      <td>192.168.10.146</td>
+      <td>54277</td>
+      <td>172.253.63.188</td>
+      <td>FIN_WAIT2</td>
+    </tr>
+    <tr>
+      <td>TCPv4</td>
+      <td>192.168.10.146</td>
+      <td>54280</td>
+      <td>13.35.82.102</td>
+      <td>ESTABLISHED</td>
+    </tr>
+    <tr>
+      <td>UDPv4</td>
+      <td>0.0.0.0</td>
+      <td>57162</td>
+      <td>*</td>
+      <td>3604</td>
+    </tr>
+    <tr>
+      <td>UDPv6</td>
+      <td>::1</td>
+      <td>1900</td>
+      <td>*</td>
+      <td>2944</td>
+    </tr>
+    <tr>
+      <td>UDPv4</td>
+      <td>192.168.10.146</td>
+      <td>1900</td>
+      <td>*</td>
+      <td>2944</td>
+    </tr>
+    <tr>
+      <td>UDPv4</td>
+      <td>0.0.0.0</td>
+      <td>500</td>
+      <td>*</td>
+      <td>112</td>
+    </tr>
+    <tr>
+      <td>TCPv4</td>
+      <td>0.0.0.0</td>
+      <td>49152</td>
+      <td>0.0.0.0</td>
+      <td>LISTENING</td>
+    </tr>
+    <tr>
+      <td>TCPv6</td>
+      <td>::</td>
+      <td>49152</td>
+      <td>::</td>
+      <td>LISTENING</td>
+    </tr>
+    <tr>
+      <td>UDPv4</td>
+      <td>0.0.0.0</td>
+      <td>5353</td>
+      <td>*</td>
+      <td>3384</td>
+    </tr>
+    <tr>
+      <td>UDPv6</td>
+      <td>::</td>
+      <td>5353</td>
+      <td>*</td>
+      <td>3384</td>
+    </tr>
+    <tr>
+      <td>TCPv4</td>
+      <td>192.168.10.146</td>
+      <td>54284</td>
+      <td>13.107.21.200</td>
+      <td>CLOSED</td>
+    </tr>
+    <tr>
+      <td>TCPv4</td>
+      <td>192.168.10.146</td>
+      <td>54283</td>
+      <td>13.107.21.200</td>
+      <td>CLOSED</td>
+    </tr>
+    <tr>
+      <td>UDPv4</td>
+      <td>0.0.0.0</td>
+      <td>57900</td>
+      <td>*</td>
+      <td>3604</td>
+    </tr>
+    <tr>
+      <td>UDPv6</td>
+      <td>::1</td>
+      <td>57480</td>
+      <td>*</td>
+      <td>2944</td>
+    </tr>
+    <tr>
+      <td>TCPv4</td>
+      <td>0.0.0.0</td>
+      <td>445</td>
+      <td>0.0.0.0</td>
+      <td>LISTENING</td>
+    </tr>
+    <tr>
+      <td>TCPv6</td>
+      <td>::</td>
+      <td>445</td>
+      <td>::</td>
+      <td>LISTENING</td>
+    </tr>
+    <tr>
+      <td>UDPv4</td>
+      <td>192.168.10.146</td>
+      <td>138</td>
+      <td>*</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Malware Indicators (malfind)</h2>
+    <div class="table-container">
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+    </div>
+</div>
+
+<div class="section">
+    <h2>DLLs Loaded (dlllist)</h2>
+    <div class="table-container">
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>PID</th>
+      <th>Base</th>
+      <th>Size</th>
+      <th>Path</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Volatility</td>
+      <td>3</td>
+      <td>Framework</td>
+      <td>2.26.2</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Command-line Activity (cmdline)</h2>
+    <div class="table-container">
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>PID</th>
+      <th>Process</th>
+      <th>Cmdline</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Volatility</td>
+      <td>3</td>
+      <td>Framework 2.26.2</td>
+    </tr>
+    <tr>
+      <td>PID</td>
+      <td>Process</td>
+      <td>Args</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Loaded Modules</h2>
+    <div class="table-container">
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Base</th>
+      <th>Size</th>
+      <th>Path</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Volatility</td>
+      <td>3</td>
+      <td>2.26.2</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+</div>
+
+<div class="section">
+    <h2>File Scan</h2>
+    <div class="table-container">
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Offset</th>
+      <th>File Path</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Volatility</td>
+      <td>2.26.2</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+</div>
+
+<div class="section">
+    <h2>SSDT Table</h2>
+    <div class="table-container">
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>SSDT Entry</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Volatility 3 Framework 2.26.2</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Service Scan</h2>
+    <div class="table-container">
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Service Info</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Volatility 3 Framework 2.26.2</td>
+    </tr>
+    <tr>
+      <td>Offset\tOrder\tPID\tStart\tState\tType\tName\tDisplay\tBinary\tBinary (Registry)\tDll</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+</div>
+
+
+<footer>
+    RAMHawk Memory Forensics Toolkit — Generated 2025-08-14 11:46:55
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+Volatility 3 Framework 2.26.2
+
+Variable	Value
+
+Kernel Base	0xf80002a00000
+DTB	0x187000
+Symbols	file:///G:/CDAC/Projects/RAMHawk/volatility3/volatility3/symbols/windows/ntkrnlmp.pdb/ECE191A20CFF4465AE46DF96C2263845-1.json.xz
+Is64Bit	True
+IsPAE	False
+layer_name	0 WindowsIntel32e
+memory_layer	1 FileLayer
+KdVersionBlock	0xf80002be20e8
+Major/Minor	272.0
+MachineType	52483
+KeNumberProcessors	0
+SystemTime	2020-04-20 23:23:26+00:00
+NtSystemRoot	C:\Windows
+NtProductType	NtProductWinNt
+NtMajorVersion	6
+NtMinorVersion	1
+PE MajorOperatingSystemVersion	6
+PE MinorOperatingSystemVersion	1
+PE Machine	34404
+PE TimeDateStamp	Thu Feb 21 04:06:50 2019
